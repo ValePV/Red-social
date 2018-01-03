@@ -1,0 +1,15 @@
+
+.navHeader{
+    background-color: #7E68AA;
+}
+.imgBar{
+    width: 40px;
+    height: 40px;
+    margin:3px 10px;
+    color: #7A7A7A;
+}
+.textBar{
+    font-size: 15px;
+    font-family: "Belgrano";
+    color: white;
+}
