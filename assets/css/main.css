@@ -42,3 +42,8 @@
 	display: block;
 	float: left;
 }
+#publicaciones{
+	background-color: #A9F5E1;
+	width: 65%;
+	border-radius: 2%;
+}

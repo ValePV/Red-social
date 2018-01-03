@@ -74,19 +74,26 @@
          <img src="assets/images/usuario.png" alt="" class="user-pick img-responsive">
        </div>
        <div class="info">
-        <h2 class="text-center">Juanita Bustamante</h2>
+        <h2 class="text-center" data-name= "juanita bustamante">Juanita Bustamante</h2>
         <button type="button" class="btn btn-default profile">Editar perfil</button>
         <button type="button" class="btn btn-default profile">Editar foto</button>
       </div>
     </div>
     <div class="col-lg-6 col-md-6">
-      <textarea name="" id="" cols="120" rows="4" placeholder="Comparte lo que piensas, una foto o un video..."></textarea>
+      <textarea name="" id="mind" cols="120" rows="4" placeholder="Comparte lo que piensas, una foto o un video..."></textarea>
       <div class="btn-group group share" role="group" aria-label="...">
-        <button type="button" class="btn btn-default">Subir una foto</button>
-        <button type="button" class="btn btn-default">Subir un video</button>
-        <button type="button" class="btn btn-default">Publicar</button>
+        <button type="button" class="btn btn-default" id="send-photo">Subir una foto</button>
+        <button type="button" class="btn btn-default" id="send-movie">Subir un video</button>
+        <button type="button" class="btn btn-default" id="publication">Publicar</button>
+        <input type="text" id="showChar" size="1">
       </div>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-4">
+      <!-- info-->
+    </div>
+    <div class="col-lg-6 col-md-6 " id="publicaciones"></div>
   </div>
 </div>
 </section>
