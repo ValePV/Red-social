@@ -123,28 +123,13 @@
 
     });
 
-    /*-------------mensajes----------------------*/
-    $(document).ready(function(){
-
-      var message= $('#chat-message');/*"message"= guardo  el valor de chat-message*/
-      var chat= $('#chat');
-
-        message.focus();/*pongo el cursor de texto para escribir un mensaje*/
-
-      $('#message-box').submit(function(e) { /*e de evento*/ /*llamo a mi form en su evento de submit*/
-        e.preventDefault(); /*cancelo el refrech cuando clickeo el boton*/
-        chat.append(message.val() + "<br/>"); /*al chat le agrego el "message" y todo lo que ponga adentro*/
-        message.val(''); /*limpio mi input al enviar un mensaje*/
-
-      });
-    });
 
     $(document).ready(function(){ 
          //ocultar resto de elementos y al hacer click mostrar lo solicitado
          $('.muro, .Section-contact, .section-images, .section-message, .section-user').hide();
          
          $('.contact').click(function(){
-          $('.muro, .section-images, .section-message, .user').hide();
+          $('.muro, .section-images, .section-message, .section-user').hide();
           $('.Section-contact').show();
          });
 
@@ -169,6 +154,23 @@
          });
 
         });
+
+    /*-------------mensajes----------------------*/
+    $(document).ready(function(){
+
+      var message= $('#chat-message');/*"message"= guardo  el valor de chat-message*/
+      var chat= $('#chat');
+
+        message.focus();/*pongo el cursor de texto para escribir un mensaje*/
+
+      $('#message-box').submit(function(e) { /*e de evento*/ /*llamo a mi form en su evento de submit*/
+        e.preventDefault(); /*cancelo el refrech cuando clickeo el boton*/
+        chat.append(message.val() + "<br/>"); /*al chat le agrego el "message" y todo lo que ponga adentro*/
+        message.val(''); /*limpio mi input al enviar un mensaje*/
+
+      });
+    });
+
 
 
 
