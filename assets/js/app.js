@@ -90,6 +90,7 @@ $(document).ready(function(){
 $(document).ready(function(){
    //selecciono todos los elementos de la clase "mitexto"
    var quantityCont = $(".contain-contact");
+   console.log(quantityCont);
    //muestro el número de los párrafos encontrados
    $('.count').append("<h1 class='tex-count'>" + quantityCont.length + "</h1>");
 });
