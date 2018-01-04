@@ -10,6 +10,7 @@
 </head>
 <body>
    <!-- Barra fija -->
+<<<<<<< HEAD
  <nav class="navbar navbar-default navHeader">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -63,6 +64,127 @@
     </div>
   </div>
 </nav>
+=======
+
+ <nav class="navbar navbar-default navHeader">
+  <div class="container-fluid">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+     <span class="sr-only">Toggle navigation</span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img class="imgBar" src="assets/images/usuario.png"></a>
+   </div>
+   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+     <li>
+      <a href="#">
+       <span><img class="imgBar" src="assets/images/inicio.png"></span>
+       <p class="textBar text-center">Inicio</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <span><img class="imgBar" src="assets/images/contacto.png"></span>
+       <p class="textBar text-center">Contactos</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <span><img class="imgBar" src="assets/images/galeria.png"></span>
+       <p class="textBar text-center">Galeria</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <span><img class="imgBar" src="assets/images/mensaje.png"></span>
+       <p class="textBar text-center">Mensaje</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <span><img class="imgBar" src="assets/images/notificacion.png"></span>
+       <p class="textBar text-center">Notificación</p>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       <span><img class="imgBar" src="assets/images/usuario.png"></span>
+       <p class="textBar text-center">Usuario</p>
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </nav>
+ <!-- /.section-images -->
+ <section class="section-images">
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+      <div class="page-header">
+        <h3 class="text-center">Galería</h3>
+      </div>
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+      <a href="#add-ima" data-toggle="modal"><img class="ima" src="assets/images/newima.png"></a>
+      <a href="#delet-ima" data-toggle="modal" class="new-ima" >  
+      </a>
+      <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA1.jpg"></a>
+      <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA2.jpg"></a>
+      <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA3.png"></a>
+      <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA4.jpg"></a>
+      <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA5.jpg"></a>
+      <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA6.jpg"></a>
+      <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA7.png"></a>
+      <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA8.jpg"></a>
+    </div>
+  </div>
+  <!-- /.Modal add imagen -->
+  <div class="modal fade" id="add-ima" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Agregar Contacto</h4>
+      </div><!-- /.modal-header -->
+      <div class="modal-body">
+        <div class="input-group">
+          <span class="input-group-addon" id="url">URL</span>
+          <input id="urlInput" type="text" class="form-control input-ima" placeholder="Pon la imagen a pinear" aria-describedby="url">
+        </div>
+      </div><!-- /.modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-addima">Agregar</button>
+      </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <!-- /.Modal eliminar imagen -->
+  <div class="modal fade" id="delet-ima" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel">Eliminar Imagen</h4>
+        </div><!-- /.modal-header -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-delet">Eliminar</button>
+        </div><!-- /.modal-footer -->
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  
+ </section>
+
+ 
+
+
+
+>>>>>>> parte de contactos y imagenes
  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
  <!-- Latest compiled and minified JavaScript -->
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

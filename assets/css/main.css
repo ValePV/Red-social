@@ -7,11 +7,21 @@
     margin:3px 10px;
     color: #7A7A7A;
 }
+.newcont{
+	width: 110px;
+	height: 110px;
+  border-radius: 50%;
+  margin: 17% 0%;
+}
+.text-newcont{
+  margin:10% 2%;
+}
 .textBar{
     font-size: 15px;
     font-family: "Belgrano";
     color: white;
 }
+<<<<<<< HEAD
 .portada{
 	outline: 1px solid green;
 	width: 300px;
@@ -46,4 +56,66 @@
 	background-color: #A9F5E1;
 	width: 65%;
 	border-radius: 2%;
+=======
+.sect-contact a{
+  color: #ABFDE8;
+}
+.sect-contact a:hover{
+  color: #25574A;
+}
+.cont{
+	display: inline-block;
+  background-color: #04B486;
+	width: 18%;
+	height: 50%;
+	border: 2px solid #04B486;
+  border-radius: 5%;
+	text-align: center;
+	margin:1% 1%;
+}
+.cont-img{
+	margin-top: 2%;
+  border-radius: 50%;
+}
+.btn-delet{
+  background-color: #25574A;
+  color: #ABFDE8;
+  border:2px solid #25574A;
+  margin:2% 2%;
+}
+.count-cont{
+  border:2px solid #14BB90;
+  border-radius: 5%;
+  margin:5% 7%;
+  background-color: #14BB90;
+  background-image: url(../../assets/images/tex.png);
+}
+.tex-count{
+  font-size: 60px;
+  margin-top: 20%;
+}
+.form-invi{
+  margin:10% 10%;
+}
+.btn-invi{
+  background-color: #25574A;
+  color: #ABFDE8;
+  border:2px solid #25574A;
+}
+.but-add{
+  background-color: #25574A;
+  color: #ABFDE8;
+  border:2px solid #25574A;
+  margin:5% 5%;
+}
+.input-name{
+  margin:5% 0%;
+}
+.ima{
+  width: 300px;
+  height: 300px;
+  margin:1%;
+  border:8px solid #04B486;
+  border-radius: 5%;
+>>>>>>> parte de contactos y imagenes
 }
