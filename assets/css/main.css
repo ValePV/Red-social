@@ -124,3 +124,48 @@
   border-radius: 5%;
 
 }
+
+
+
+/*-----------------------Barra Vertical de Mensajes--------------------------*/
+aside{
+  /*outline: 1px solid red;*/
+  margin: 3%;
+  align-items: center;
+}
+
+ul{
+  /*outline: 1px solid YELLOW;*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 350%;
+}
+
+#Vertical-bar li{
+  outline: 1px solid grey;
+  background:#D8D8D8; /*gris*/
+}
+
+li .sub-menu{
+  text-align: center;
+  /*outline: 1px solid green;*/
+  display: block;
+  text-decoration: none;
+  color: #08298A; /*azul*/
+  padding-left: 10px;
+
+}
+
+li .sub-menu:hover{
+  background: #D8D8D8; gris
+  text-decoration: none;
+  color:#04b486; /*verde barra*/
+}
+
+h1{
+  text-align: center;
+  background: #04b486;/*verde barra*/
+  padding: 3%;
+  color: white;
+}

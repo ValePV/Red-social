@@ -30,45 +30,45 @@ window.onload = function() {
 //
 //base de datos contactos
 var contac =[
-  {ID:'USU1', img:'CONT1.png', name: 'Andres Jorquera', email: 'ajorquera@locura.cl', 
+  {ID:'USU1', img:'CONT1.png', name: 'Andres Jorquera', email: 'ajorquera@locura.cl',
   },
-  {ID:'USU2', img:'CONT2.png', name: 'Marcela Gomez', email: 'mgomez@locura.cl', 
-  }, 
-  {ID:'USU3', img:'CONT3.png', name: 'Antonio Lopez', email: 'alopez@locura.cl', 
-  }, 
-  {ID:'USU4', img:'CONT4.png', name: 'Marcela Quiroz', email: 'mquiroz@locura.cl', 
+  {ID:'USU2', img:'CONT2.png', name: 'Marcela Gomez', email: 'mgomez@locura.cl',
   },
-  {ID:'USU5', img:'CONT5.png', name: 'Katherine Villarroel', email: 'kvillarroel@locura.cl', 
+  {ID:'USU3', img:'CONT3.png', name: 'Antonio Lopez', email: 'alopez@locura.cl',
   },
-  {ID:'USU6', img:'CONT6.png', name: 'Damaris Salinas', email: 'dsalinas@locura.cl', 
+  {ID:'USU4', img:'CONT4.png', name: 'Marcela Quiroz', email: 'mquiroz@locura.cl',
   },
-  {ID:'USU7', img:'CONT7.png', name: 'Pedro Guerra', email: 'pguerra@locura.cl', 
+  {ID:'USU5', img:'CONT5.png', name: 'Katherine Villarroel', email: 'kvillarroel@locura.cl',
   },
-  {ID:'USU8', img:'CONT8.png', name: 'Rodolfo Fuentes', email: 'rfuentes@locura.cl', 
+  {ID:'USU6', img:'CONT6.png', name: 'Damaris Salinas', email: 'dsalinas@locura.cl',
   },
-  {ID:'USU9', img:'CONT2.png', name: 'Camila Ramirez', email: 'cramirez@locura.cl', 
+  {ID:'USU7', img:'CONT7.png', name: 'Pedro Guerra', email: 'pguerra@locura.cl',
   },
-  {ID:'USU10', img:'CONT10.png', name: 'Ricardo Hernandez', email: 'rhernandez@locura.cl', 
-  }, 
-  {ID:'USU11', img:'CONT11.png', name: 'Marcelo Paez', email: 'mpaez@locura.cl', 
+  {ID:'USU8', img:'CONT8.png', name: 'Rodolfo Fuentes', email: 'rfuentes@locura.cl',
   },
-  {ID:'USU12', img:'CONT12.png', name: 'Luis Rojas', email: 'lrojas@locura.cl', 
+  {ID:'USU9', img:'CONT2.png', name: 'Camila Ramirez', email: 'cramirez@locura.cl',
   },
-  {ID:'USU13', img:'CONT1.png', name: 'Renato Nuñez', email: 'rnunez@locura.cl', 
+  {ID:'USU10', img:'CONT10.png', name: 'Ricardo Hernandez', email: 'rhernandez@locura.cl',
   },
-  {ID:'USU14', img:'CONT4.png', name: 'Romina Gonzalez', email: 'rgonzalez@locura.cl', 
+  {ID:'USU11', img:'CONT11.png', name: 'Marcelo Paez', email: 'mpaez@locura.cl',
   },
-  {ID:'USU15', img:'CONT5.png', name: 'Diana Romero', email: 'dromero@locura.cl', 
+  {ID:'USU12', img:'CONT12.png', name: 'Luis Rojas', email: 'lrojas@locura.cl',
   },
-  {ID:'USU16', img:'CONT6.png', name: 'Natalia Lillo', email: 'nlillo@locura.cl', 
-  },  
-  {ID:'USU17', img:'CONT7.png', name: 'David Troncoso', email: 'dtroncoso@locura.cl', 
-  }, 
-  {ID:'USU18', img:'CONT8.png', name: 'Ivan Fuentes', email: 'ifuentes@locura.cl', 
-  }, 
-  {ID:'USU19', img:'CONT2.png', name: 'Constanza Rizos', email: 'crizos@locura.cl', 
-  },   
- 
+  {ID:'USU13', img:'CONT1.png', name: 'Renato Nuñez', email: 'rnunez@locura.cl',
+  },
+  {ID:'USU14', img:'CONT4.png', name: 'Romina Gonzalez', email: 'rgonzalez@locura.cl',
+  },
+  {ID:'USU15', img:'CONT5.png', name: 'Diana Romero', email: 'dromero@locura.cl',
+  },
+  {ID:'USU16', img:'CONT6.png', name: 'Natalia Lillo', email: 'nlillo@locura.cl',
+  },
+  {ID:'USU17', img:'CONT7.png', name: 'David Troncoso', email: 'dtroncoso@locura.cl',
+  },
+  {ID:'USU18', img:'CONT8.png', name: 'Ivan Fuentes', email: 'ifuentes@locura.cl',
+  },
+  {ID:'USU19', img:'CONT2.png', name: 'Constanza Rizos', email: 'crizos@locura.cl',
+  },
+
 ];
 //
 //final de base de datos de contactos
@@ -96,36 +96,50 @@ $(document).ready(function(){
 });
 
 //Eliminar contactos
-$(".btn-delet").on("click",function(){ 
+$(".btn-delet").on("click",function(){
      $(this).parent().remove();
-    
+
 });
 //Agregar contacto
-$(".btn-add").on("click",function(){ 
+$(".btn-add").on("click",function(){
   // rescatando nombre
   var contName = $(".input-name").val();
   //rescatando el correo electronico
   var contEmail = $(".input-email").val();
 
   $('.sect-contact').append("<span class='contain-contact'><div class='cont'>" +
-  "<a href='#'><img class='cont-img' src='assets/images/newcont1.png><h5>" + 
+  "<a href='#'><img class='cont-img' src='assets/images/newcont1.png><h5>" +
   contName + "</h5><p>" + contEmail +
   "</p></a><button class='btn btn-default btn-delet' type='submit'>Eliminar</button></div></>");
 
-    
+
 });
 //Agregar imagen
-$(".btn-addima").on("click",function(){ 
+$(".btn-addima").on("click",function(){
   // rescatando iamgen
   var contIma = $(".input-ima").val();
-  
+
   $('.new-ima').append("<img class='ima' src='"
   + contIma + "'>");
 
-     
+
 });
 
+/*-------------mensajes----------------------*/
+$(document).ready(function(){
 
+  var message= $('#chat-message');/*"message"= guardo  el valor de chat-message*/
+  var chat= $('#chat');
+
+    message.focus();/*pongo el cursor de texto para escribir un mensaje*/
+
+  $('#message-box').submit(function(e) { /*e de evento*/ /*llamo a mi form en su evento de submit*/
+    e.preventDefault(); /*cancelo el refrech cuando clickeo el boton*/
+    chat.append(message.val() + "<br/>"); /*al chat le agrego el "message" y todo lo que ponga adentro*/
+    message.val(''); /*limpio mi input al enviar un mensaje*/
+
+  });
+});
 
 
 
@@ -142,9 +156,8 @@ $(".btn-addima").on("click",function(){
     $(this).css('height','200px');
     $(this).css('width','300px');
   });
-  // achicar imagen al sacar el mouse de encima 
+  // achicar imagen al sacar el mouse de encima
   $(".restim").mouseout(function(){
     $(this).css('height','150px');
     $(this).css('width','200px');
   });*/
-
