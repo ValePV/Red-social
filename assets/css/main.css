@@ -21,7 +21,7 @@
     font-family: "Belgrano";
     color: white;
 }
-<<<<<<< HEAD
+
 .portada{
 	outline: 1px solid green;
 	width: 300px;
@@ -56,7 +56,7 @@
 	background-color: #A9F5E1;
 	width: 65%;
 	border-radius: 2%;
-=======
+}
 .sect-contact a{
   color: #ABFDE8;
 }
@@ -117,5 +117,5 @@
   margin:1%;
   border:8px solid #04B486;
   border-radius: 5%;
->>>>>>> parte de contactos y imagenes
+
 }

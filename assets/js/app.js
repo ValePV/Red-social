@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 window.onload = function() {
     var sendButton = document.getElementById("publication");
     var thinkInput = document.getElementById("mind");
@@ -26,7 +26,7 @@ window.onload = function() {
 
 
 }
-=======
+
 //
 //base de datos contactos
 var contac =[
@@ -146,4 +146,4 @@ $(".btn-addima").on("click",function(){
     $(this).css('height','150px');
     $(this).css('width','200px');
   });*/
->>>>>>> parte de contactos y imagenes
+
