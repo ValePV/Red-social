@@ -4,8 +4,8 @@ window.onload = function() {
     var thinkInput = document.getElementById("mind");
     var timeLine = document.getElementById("publicaciones");
 
-    sendButton.onclick = function() {
-        if (thinkInput.value == "") {
+    sendButton.onclick = function(){
+        if (thinkInput.value == ""){
             alert("complete");
 
         } else {
@@ -21,11 +21,11 @@ window.onload = function() {
             dateSpan.textContent = new Date();
             tuitP.textContent = thinkInput.value;
             timeLine.insertBefore(tuitDiv, timeLine.children[0]);
-        }
-    }
+        };
+    };
 
 
-}
+};
 
 //
 //base de datos contactos
@@ -82,10 +82,6 @@ for(i = 0; i< contac.length ; i++){
 
 }
 
-$(document).ready(function(){
-
-});
-
   //Contar cantidad de elementos con una clase
 $(document).ready(function(){
    //selecciono todos los elementos de la clase "mitexto"
@@ -105,12 +101,13 @@ $(".btn-add").on("click",function(){
   // rescatando nombre
   var contName = $(".input-name").val();
   //rescatando el correo electronico
-  var contEmail = $(".input-email").val();
+  var contEmail = $("#recipient-email").val();
 
   $('.sect-contact').append("<span class='contain-contact'><div class='cont'>" +
-  "<a href='#'><img class='cont-img' src='assets/images/newcont1.png><h5>" +
+  "<a href='#'><img class='cont-img' src='assets/images/newcont1.png'><h5>" + 
+
   contName + "</h5><p>" + contEmail +
-  "</p></a><button class='btn btn-default btn-delet' type='submit'>Eliminar</button></div></>");
+  "</p></a><button class='btn btn-default btn-delet' type='submit'>Eliminar</button></div></span>");
 
 
 });
