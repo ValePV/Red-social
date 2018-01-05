@@ -11,8 +11,15 @@
     margin-bottom:6%;
     padding-left: 4%;
   }
+  .login{
+    background-color: #04B486;
+    
+  }
   .input-group{
     margin-bottom: 4%;
+  }
+  .conatiner1{
+    background-color: #04B486;
   }
   .btn-log{
     background-color:#04B486;
@@ -25,6 +32,11 @@
     color: black;
     font-weight: bold;
     margin-bottom: 2%;
+  }
+  .btn-publ{
+    background-color:#04B486;
+    color: black;
+    font-weight: bold; 
   }
   .title-charge{
     font-family: 'Courgette', cursive;
@@ -90,13 +102,17 @@
 
   .portada{
     width: 300px;
-    height: 120px;
+    height: 200px;
     background-image: url(../../assets/images/fondo.jpg);
+    margin:0%;
+  }
+  .text-wall{
+    margin:15% 2%;
   }
   .photo{
-    width: 25%;
+    width: 35%;
     position: absolute;
-    left: 30%;
+    left: 25%;
     top: 30%;
   }
   .user-pick{
@@ -106,21 +122,34 @@
     outline: 1px dotted grey;
     padding-top: 10%;
     width: 300px;
-    height: 120px;
+    height: 250px;
   }
   .profile{
-    float: right;
-    margin-right: 12%;
-    margin-bottom: 2%;
+    margin:3% 0.5%;
+    background-color:#04B486;
+    color: black;
+    font-weight: bold; 
+  }
+  .area-wall{
+    margin:3% 3% 1% 0%;
   }
   .group{
     display: block;
     float: left;
   }
-  #publicaciones{
-    background-color: #A9F5E1;
-    width: 65%;
+  .conta-login{
+    padding: 5%;
+    background-color: white;
+  }
+  .conta-public{
+    background-color: #48CBA9;
+    width: 100%;
     border-radius: 2%;
+    border: 2px solid #3D9F86;
+    margin:10% 0%;
+  }
+  #publicaciones{
+    margin:1%;
   }
   .sect-contact a{
     color: #ABFDE8;
@@ -148,13 +177,21 @@
     border:2px solid #25574A;
     margin:2% 2%;
   }
+  .btn-adima{
+    background-color: #25574A;
+    color: #ABFDE8;
+    border:2px solid #25574A;
+    margin:2% 2%;
+  }
   .count-cont{
     border:2px solid #14BB90;
     border-radius: 5%;
     margin:5% 7%;
     background-color: #14BB90;
     background-image: url(../../assets/images/tex.png);
-
+  }
+  .conta-wall{
+    margin:5% 7%;
   }
   .profile-cont{
     background-color: #8BC7B8;
@@ -190,9 +227,16 @@
     width: 300px;
     height: 300px;
     margin:1%;
-    border:8px solid #04B486;
-    border-radius: 5%;
+    
   }
+  .ima-cont{
+    width: 310px;
+    border:3px solid #25574A;
+    background-color: #25574A;
+    display: inline-block;
+    margin: 0.5%;
+  }
+
   .circle{
     border-radius: 50%;
     margin:2% 10%;

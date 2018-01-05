@@ -27,6 +27,22 @@ window.onload = function() {
 
 };
 
+//Agregar imagen
+$("#add-pubima").on("click",function(){
+  // rescatando iamgen
+  var pubImag = $("#urlInp-image").val();
+
+  $('#publicaciones').append("<div><img src='"
+  + pubImag + "'></div>");
+});
+
+//Agregar video
+$("#inc-vid").on("click",function(){
+  // rescatando iamgen
+  var pubVid = $("#urlInp-vid").val();
+
+  $('#publicaciones').append("<div><video>" + pubVid + " </video></div>");
+});
 //
 //base de datos contactos
 var contac =[
@@ -97,6 +113,7 @@ $(document).ready(function(){
    $('.count').append("<h1 class='tex-count'>" + quantityCont.length + "</h1>");
 });
 
+
 //Agregar contacto
 $(".btn-add").on("click",function(){
   // rescatando nombre
@@ -127,11 +144,27 @@ $(".btn-addima").on("click",function(){
   // rescatando iamgen
   var contIma = $(".input-ima").val();
 
-  $('.new-ima').append("<img class='ima' src='"
-  + contIma + "'>");
+  $('.new-ima').append("<div class='ima-cont'><img class='ima' src='"
+  + contIma + "'><button class='btn btn-default btn-delet'>Eliminar</button></div>");
+
+  //Eliminar imagenes
+$(".btn-delet").on("click",function(){
+     $(this).parent().remove();
+
+});
 });
 
-$('.muro, .Section-contact, .section-images, .section-message, .section-user, .bar, .login .init').hide();
+//funcion para eliminar y rescatar imagenes
+$(function(){
+  // llamar la galeria y el basurero
+  var $gallery = $('#contai-images');
+  var $trash = $('#trash-contain');
+  
+
+})
+
+
+$('.section-wall, .section-contact, .section-images, .section-message, .section-user, .bar, .login .init').hide();
   setTimeout(function(){ 
     $('.charge').fadeOut(500);
     $('.login').show();
@@ -147,7 +180,7 @@ $('.muro, .Section-contact, .section-images, .section-message, .section-user, .b
 
     if(user === "juanita" && password === "1234"){
       $('.bar, .init').show();
-      $('.muro, .Section-contact, .section-images, .section-message, .section-user, .login').hide();
+      $('.section-wall, .section-contact, .section-images, .section-message, .section-user, .login').hide();
       $('input').val("");
     }else{
       alert("datos incorrectos");
@@ -156,16 +189,16 @@ $('.muro, .Section-contact, .section-images, .section-message, .section-user, .b
   });
 
   $('.exit').click(function(){
-    $('.muro, .Section-contact, .section-images, .section-message, .section-user, .bar, .init').hide();
+    $('.section-wall, .section-contact, .section-images, .section-message, .section-user, .bar, .init').hide();
     $('.login').show();
   });
 
   //ocultar resto de elementos y al hacer click mostrar lo solicitado
-  $('.muro, .Section-contact, .section-images, .section-message, .section-user, .bar, .login, .init').hide();
+  $('.section-wall, .section-contact, .section-images, .section-message, .section-user, .bar, .login, .init').hide();
        
   $('.contact').click(function(){
-  $('.init, .muro, .section-images, .section-message, .section-user, .login').hide();
-  $('.Section-contact').show();
+  $('.init, .section-wall, .section-images, .section-message, .section-user, .login').hide();
+  $('.section-contact').show();
   });
 
 /*-------------mensajes----------------------*/
@@ -183,28 +216,28 @@ $('.muro, .Section-contact, .section-images, .section-message, .section-user, .b
 
 
   $('.wall').click(function(){
-    $('.Section-contact, .section-images, .section-message, .section-user, .login, .init').hide();
-    $('.muro').show();
+    $('.section-contact, .section-images, .section-message, .section-user, .login, .init').hide();
+    $('.section-wall').show();
   });
 
   $('.gallery').click(function(){
-    $('.Section-contact, .muro, .section-message, .section-user, .login, .init').hide();
+    $('.section-contact, .section-wall, .section-message, .section-user, .login, .init').hide();
     $('.section-images').show();
   });
 
   $('.message').click(function(){
-    $('.section-images, .Section-contact, .muro, .section-user, .login, .init').hide();
+    $('.section-images, .section-contact, .section-wall, .section-user, .login, .init').hide();
     $('.section-message').show();
   });
 
   $('.user').click(function(){
-   $('.section-images, .Section-contact, .muro, .section-message, .login, .init').hide();
+   $('.section-images, .section-contact, .section-wall, .section-message, .login, .init').hide();
    $('.section-user').show();
   });
 
   $('#logo').click(function(){
     $('.bar, .init').show();
-    $('.muro, .Section-contact, .section-images, .section-message, .section-user, .login').hide();
+    $('.section-wall, .section-contact, .section-images, .section-message, .section-user, .login').hide();
   });
 
           
