@@ -65,6 +65,7 @@
     height: 60px;
     margin: 5px 10px 3px 25px;
   }
+  
   .newcont{
   	width: 110px;
   	height: 110px;
@@ -150,7 +151,9 @@
   .tex-count{
     font-size: 60px;
     margin-top: 20%;
+    background:transparent;
   }
+  
   .form-invi{
     margin:10% 10%;
   }
@@ -174,9 +177,11 @@
     margin:1%;
     border:8px solid #04B486;
     border-radius: 5%;
-
   }
-
+  .circle{
+    border-radius: 50%;
+    margin:2% 10%;
+  }
 
 
   /*-----------------------Barra Vertical de Mensajes--------------------------*/
