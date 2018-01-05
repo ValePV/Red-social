@@ -186,9 +186,11 @@
       </div>
       <div class="col-lg-7 col-md-7 col-xs-12 col-sm-12">
         <textarea class="area-wall" name="" id="mind" cols="90" rows="4" placeholder="Comparte lo que piensas, una foto o un video..."></textarea>
-        <div class="btn-group group share" role="group" aria-label="...">
-          <a href="#inc-ima" id="add-pubima" class="btn-publ btn btn-default" data-toggle="modal" >Subir un video</a>
-          <a href="#inc-vid"  id="add-pubvid" class="btn-publ btn btn-default" data-toggle="modal" >Subir una foto</a>
+
+        <div class="btn-group group share group-wall" role="group" aria-label="...">
+          <a href="#inc-ima" id="add-pubima" class="btn-publ btn btn-default" data-toggle="modal" >Subir una foto</a>
+          <a href="#inc-vid"  id="add-pubvid" class="btn-publ btn btn-default" data-toggle="modal" >Subir un video</a>
+
           <button type="button" class="btn-publ btn btn-default" id="publication">Publicar</button>
         
         <div class="conta-public" id="publicaciones"></div>  
@@ -207,17 +209,17 @@
           <div class="modal-body">
             <div class="input-group">
               <span class="input-group-addon" >URL</span>
-              <input id="urlInp-image" type="text" class="form-control input-ima" placeholder="Pon la imagen a pinear" aria-describedby="url">
+              <input  type="text" class="form-control input-imamuro" placeholder="Pon la imagen a pinear" aria-describedby="url">
             </div>
           </div><!-- /.modal-body -->
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary btn-addima">Agregar</button>
+            <button type="button" class="btn btn-primary btn-incoima">Agregar</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-  <!-- /.Modal add imagen -->
+  <!-- /.Modal add video -->
     <div class="modal fade" id="inc-vid" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -228,11 +230,11 @@
           <div class="modal-body">
             <div class="input-group">
               <span class="input-group-addon" >URL</span>
-              <input id="urlInp-vid" type="text" class="form-control input-ima" placeholder="Pon la imagen a pinear" aria-describedby="url">
+              <input  type="text" class="form-control input-video" placeholder="Pon la imagen a pinear" aria-describedby="url">
             </div>
           </div><!-- /.modal-body -->
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary btn-addima">Agregar</button>
+            <button type="button" class="btn btn-primary btn-addevide">Agregar</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -333,8 +335,10 @@
       </div><!-- /.col -->
     </div><!-- /.row -->
     <div class="row">
+
       <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
         <div class="ima-cont"><img class="ima" src="assets/images/newima.png"><a href="#add-ima" class="btn btn-default btn-adima" data-toggle="modal" >Agregar Imagen</a></div>
+
         
         <span class="new-ima">
           
@@ -364,7 +368,7 @@
           <div class="modal-body">
             <div class="input-group">
               <span class="input-group-addon ">URL</span>
-              <input id="urlInput" type="text" class="form-control input-ima" placeholder="Pon la imagen a pinear" aria-describedby="url">
+              <input  type="text" class="form-control input-ima" placeholder="Pon la imagen a pinear" aria-describedby="url">
             </div>
           </div><!-- /.modal-body -->
           <div class="modal-footer">

@@ -29,18 +29,19 @@ window.onload = function() {
 };
 
 //Agregar imagen
-$("#add-pubima").on("click",function(){
-  // rescatando iamgen
-  var pubImag = $("#urlInp-image").val();
 
-  $('#publicaciones').append("<div><img src='"
-  + pubImag + "'></div>");
+$(".btn-incoima").on("click",function(){
+  // rescatando iamgen
+  var pubImag = $(".input-imamuro").val();
+
+  $('#publicaciones').append("<div class='cont-newpub'><img src='"
+  + pubImag + "' width='15%'></div>");
 });
 
 //Agregar video
-$("#inc-vid").on("click",function(){
+$(".btn-addevide").on("click",function(){
   // rescatando iamgen
-  var pubVid = $("#urlInp-vid").val();
+  var pubVid = $(".input-video").val();
 
   $('#publicaciones').append("<div><video>" + pubVid + " </video></div>");
 });

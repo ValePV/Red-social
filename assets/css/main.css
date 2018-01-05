@@ -37,6 +37,7 @@
     background-color:#04B486;
     color: black;
     font-weight: bold; 
+    margin-bottom: 10%
   }
   .title-charge{
     font-family: 'Courgette', cursive;
@@ -133,17 +134,13 @@
   .area-wall{
     margin:3% 3% 1% 0%;
   }
-  .group{
-    display: block;
-    float: left;
-  }
-  .conta-login{
+    .conta-login{
     padding: 5%;
     background-color: white;
   }
   .conta-public{
     background-color: #48CBA9;
-    width: 100%;
+    width: 150%;
     border-radius: 2%;
     border: 2px solid #3D9F86;
     margin:10% 0%;
@@ -264,12 +261,27 @@
     border:2px solid #25574A;
     padding: 2%;
   }
+  .cont-newpub{
+    border:2px solid #25574A;
+    background-color: #48CBA9;
+    width: 100%;
+    border-radius: 2%;
+  }
+  .tuit{
+    border:2px solid #25574A;
+    margin:2%;
+    background-color: #48CBA9;
+    width: 100%;
+    border-radius: 2%;
+  }
 
   .chat_area{
     border-bottom: 1px dotted #B3A9A9;
     margin:2%;
   }
-
+  .group-wall{
+    margin-bottom: 10%;
+  }
 
   /*-----------------------Barra Vertical de Mensajes--------------------------*/
   aside{
