@@ -292,18 +292,25 @@
       </div><!-- /.col -->
     </div><!-- /.row -->
     <div class="row">
+
       <div class="col-xs-12 col-md-12">
         <a href="#add-ima" data-toggle="modal"><img class="ima" src="assets/images/newima.png"></a>
         <a href="#delet-ima" data-toggle="modal" class="new-ima" >
+
+      <div class="col-xs-12 col-md-9">
+        <span><a href="#add-ima" data-toggle="modal"><img class="ima" src="assets/images/newima.png"></a></span>
+        <a href="#delet-ima" data-toggle="modal" class="new-ima" >
+
         </a>
-        <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA1.jpg"></a>
-        <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA2.jpg"></a>
-        <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA3.png"></a>
-        <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA4.jpg"></a>
-        <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA5.jpg"></a>
-        <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA6.jpg"></a>
-        <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA7.png"></a>
-        <a href="#delet-ima" data-toggle="modal"><img class="ima" src="assets/images/IMA8.jpg"></a>
+        <span><img class="ima" src="assets/images/IMA1.jpg"><button type="button" class="btn btn-default btn-zoom" data-dismiss="modal">Zoom</button><button type="button" class="btn btn-default btn-del" data-dismiss="modal">Eliminar</button></span>
+
+        <a href="#" data-toggle="modal"><img class="ima" src="assets/images/IMA2.jpg"><button type="button" class="btn btn-default btn-zoom" data-dismiss="modal">Zoom</button><button type="button" class="btn btn-default btn-del" data-dismiss="modal">Eliminar</button></a>
+        <a href="#" data-toggle="modal"><img class="ima" src="assets/images/IMA3.png"><button type="button" class="btn btn-default btn-zoom" data-dismiss="modal">Zoom</button><button type="button" class="btn btn-default btn-del" data-dismiss="modal">Eliminar</button></a>
+        <a href="#" data-toggle="modal"><img class="ima" src="assets/images/IMA4.jpg"><button type="button" class="btn btn-default btn-zoom" data-dismiss="modal">Zoom</button><button type="button" class="btn btn-default btn-del" data-dismiss="modal">Eliminar</button></a>
+        <a href="#" data-toggle="modal"><img class="ima" src="assets/images/IMA5.jpg"><button type="button" class="btn btn-default btn-zoom" data-dismiss="modal">Zoom</button><button type="button" class="btn btn-default btn-del" data-dismiss="modal">Eliminar</button></a>
+        <a href="#" data-toggle="modal"><img class="ima" src="assets/images/IMA6.jpg"><button type="button" class="btn btn-default btn-zoom" data-dismiss="modal">Zoom</button><button type="button" class="btn btn-default btn-del" data-dismiss="modal">Eliminar</button></a>
+        <a href="#" data-toggle="modal"><img class="ima" src="assets/images/IMA7.png"><button type="button" class="btn btn-default btn-zoom" data-dismiss="modal">Zoom</button><button type="button" class="btn btn-default btn-del" data-dismiss="modal">Eliminar</button></a>
+        <a href="#" data-toggle="modal"><img class="ima" src="assets/images/IMA8.jpg"><button type="button" class="btn btn-default btn-zoom" data-dismiss="modal">Zoom</button><button type="button" class="btn btn-default btn-del" data-dismiss="modal">Eliminar</button></a>
       </div>
     </div>
     <!-- /.Modal add imagen -->
@@ -393,6 +400,7 @@
       </div>
       <!-- ventanas de chats -->
       <div class="row">
+
         <div class="col-xs-12 col-md-9 pull-right">
           <div class="new_message_head pull-right">
             <div class="pull-left"><button><i class="fa fa-plus-square-o" aria-hidden="true"></i> New Message</button></div><div class="pull-right"><div class="dropdown">
@@ -453,6 +461,23 @@
           </div>
         </aside>
       </section>
+
+
+        <div class="col-xs-3 col-md-3">
+          <ul class="collection">
+          </ul>
+        </div>
+      <!-- Chat -->
+      <div class="col-xs-9 col-md-9">
+        <div class=""></div>
+        <div id="chat"></div> <!-- Recibe el mensaje -->
+        <form id="message-box"><!-- Escribo el mensaje -->
+          <input type="text" id="chat-message" value="">
+          <input type="submit" value="ENVIAR">
+        </form>
+      </div>
+    </aside>
+
 
     <!-- notificacion -->
     <div class="modal fade" id="not" tabindex="-1" role="dialog">
