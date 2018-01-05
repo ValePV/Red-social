@@ -123,40 +123,40 @@
 
     });
 
-        $('.muro, .Section-contact, .section-images, .section-message, .section-user, .bar').hide();
+        $('.muro, .Section-contact, .section-images, .section-message, .section-user, .bar, .login').hide();
           setTimeout(function(){ 
             $('.charge').fadeOut(500);
-            $('.bar').show();
+            $('.login').show();
           },  3000);
     
 
 
     $(document).ready(function(){ 
          //ocultar resto de elementos y al hacer click mostrar lo solicitado
-         $('.muro, .Section-contact, .section-images, .section-message, .section-user, .bar').hide();
+         $('.muro, .Section-contact, .section-images, .section-message, .section-user, .bar, .login').hide();
          
          $('.contact').click(function(){
-          $('.muro, .section-images, .section-message, .section-user').hide();
+          $('.muro, .section-images, .section-message, .section-user, .login').hide();
           $('.Section-contact').show();
          });
 
          $('.wall').click(function(){
-          $('.Section-contact, .section-images, .section-message, .section-user').hide();
+          $('.Section-contact, .section-images, .section-message, .section-user, .login').hide();
           $('.muro').show();
          });
 
          $('.gallery').click(function(){
-          $('.Section-contact, .muro, .section-message, .section-user').hide();
+          $('.Section-contact, .muro, .section-message, .section-user, .bar, .login').hide();
           $('.section-images').show();
          });
 
          $('.message').click(function(){
-          $('.section-images, .Section-contact, .muro, .gallery, .section-user').hide();
+          $('.section-images, .Section-contact, .muro, .gallery, .section-user, .bar, .login').hide();
           $('.section-message').show();
          });
 
          $('.user').click(function(){
-          $('.section-images, .Section-contact, .muro, .gallery, .section-message').hide();
+          $('.section-images, .Section-contact, .muro, .gallery, .section-message, .bar, .login').hide();
           $('.section-user').show();
          });
 
