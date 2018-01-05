@@ -21,6 +21,7 @@ window.onload = function() {
             dateSpan.textContent = new Date();
             tuitP.textContent = thinkInput.value;
             timeLine.insertBefore(tuitDiv, timeLine.children[0]);
+            thinkInput.value = "";
         };
     };
 

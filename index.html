@@ -13,7 +13,7 @@
   <section class="charge">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-md-12">
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
           <h1 class="text-center title-charge">Old Mostache</h1>
           <img src="assets/images/349376.png" alt="" class="img-responsive center-block">
           <img src="assets/images/loader.gif" alt="" class="img-responsive center-block loader">
@@ -25,16 +25,16 @@
   <section class="login">
     <div class="container conatiner1">
       <div class="row border-login">
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-2 col-xs-2 col-sm-2">
           <img src="assets/images/349376.png" alt="" class="img-responsive mostache-sr">
         </div>
-        <div class="col-lg-10">
+        <div class="col-lg-10 col-md-10 col-xs-10 col-sm-10">
           <h1 class="title-login">Old Mostache</h1>
         </div>
       </div>
       <div class="conta-login">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
             <div class="input-group">
               <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span></span>
               <input type="text" class="form-control username" placeholder="Username" aria-describedby="sizing-addon2">
@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
             <div class="input-group">
               <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon glyphicon-lock" aria-hidden="true"></span></span>
               <input type="text" class="form-control pass" placeholder="Password" aria-describedby="sizing-addon2">
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
             <button class="btn btn-default btn-log" type="submit">LOG IN</button>
             <button class="btn btn-default btn1" href="#register" data-toggle="modal">REGISTRATE</button>
             <p>forgot password? <a href="#" class="click">Click here</a></p>
@@ -72,10 +72,10 @@
           <form>
             <div class="form-group">
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
                   <input class="form-control" id="email" placeholder="Nombre">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
                   <input class="form-control" id="email" placeholder="Apellido">
                 </div>
               </div>
@@ -161,16 +161,16 @@
   <section  class="init">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
               <a class="twitter-timeline" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
         </div>
       </section>
   <!-- muro -->
-  <section class="section-wall">
+  <section class="section-wall container">
     <div class="row">
-      <div class="col-lg-4 col-md-4">
+      <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
         <div  class="conta-wall">
           <div class="portada"></div>
           <div class="photo">
@@ -184,18 +184,14 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-7 col-md-7">
+      <div class="col-lg-7 col-md-7 col-xs-7 col-sm-7">
         <textarea class="area-wall" name="" id="mind" cols="90" rows="4" placeholder="Comparte lo que piensas, una foto o un video..."></textarea>
         <div class="btn-group group share" role="group" aria-label="...">
-          <a href="#inc-ima" id="add-pubima" class="btn-publ btn btn-default" data-toggle="modal" >Subir una foto</a>
-          <a href="#inc-vid"  id="add-pubvid" class="btn-publ btn btn-default" data-toggle="modal" >Subir un video</a>
+          <a href="#inc-ima" id="add-pubima" class="btn-publ btn btn-default" data-toggle="modal" >Subir un video</a>
+          <a href="#inc-vid"  id="add-pubvid" class="btn-publ btn btn-default" data-toggle="modal" >Subir una foto</a>
           <button type="button" class="btn-publ btn btn-default" id="publication">Publicar</button>
         
-        <div class="conta-public">
-          <div id="publicaciones">
-            
-          </div>
-        </div>  
+        <div class="conta-public" id="publicaciones"></div>  
       </div>
     </div>
   </section>
@@ -330,14 +326,14 @@
   <!-- /.section-images -->
   <section class="section-images" id="section-images">
     <div class="row">
-      <div class="col-xs-12 col-md-12">
+      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
         <div class="page-header">
           <h2 class="text-center">Galería</h2>
         </div>
       </div><!-- /.col -->
     </div><!-- /.row -->
     <div class="row">
-      <div class="col-xs-12 col-md-12">
+      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
         <div class="ima-cont"><img class="ima" src="assets/images/newima.png"><a href="#add-ima" class="btn btn-default btn-adima" data-toggle="modal" >Agregar Imagen</a></div>
         
         <span class="new-ima">
@@ -443,121 +439,8 @@
             </span>
         </div><!-- /input-group -->  
       </div>
-    </div>
-    
+    </div>    
   </section>
-
-  <!--
-  <section class="section-message">
-    <aside id="Vertical-bar">
-      <div class="row">
-        <div class="col-xs-12 col-md-3">
-          <h1>Mensaje</h1>
-          <ul>
-            <li><a class="sub-menu" href="#"> <i class="fa fa-search" aria-hidden="true"></i> Buscar Mensajes </a></li>
-            <li><a class="sub-menu" href="#"><i class="fa fa-search" aria-hidden="true"></i>Buscar Contactos </a></li>
-          </ul>
-
-          <div class="member_list">--><!-- chat contacto -->
-        <!--    <ul class="list-unstyled">
-              <li class="left clearfix">
-                <a href="#modal">
-                  <span class="chat-img pull-left">
-                    <img src="assets/images/CONT1.png" alt="User Avatar" width="55%" class="img-circle">
-                  </span>
-                  <div class="chat-body clearfix">
-                    <div class="header_sec">
-                      <strong class="primary-font">Andrés Jorquera</strong>
-                      <strong class="pull-right">09:45AM<span class="badge pull-right">2</span></strong>
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li class="left clearfix">
-                <a href="#">
-                  <span class="chat-img pull-left">
-                    <img src="assets/images/CONT2.png" alt="User Avatar" width="55%" class="img-circle">
-                  </span>
-                  <div class="chat-body clearfix">
-                    <div class="header_sec">
-                      <strong class="primary-font">Marcela Gomez</strong>
-                      <strong class="pull-right ">09:45AM <span class="badge pull-right">1</span> </strong>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>-->
-
-          <!-- Contactos -->
-      <!--    <br>
-          <h1>Contactos</h1>
-          <ul class="collection"></ul>
-        </div>
-      </div>
-    -->  <!-- ventanas de chats -->
-    <!--  <div class="row">
-        <div class="col-xs-12 col-md-9 pull-right">
-          <div class="new_message_head pull-right">
-            <div class="pull-left"><button><i class="fa fa-plus-square-o" aria-hidden="true"></i> New Message</button></div><div class="pull-right"><div class="dropdown">
-              <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-cogs" aria-hidden="true"></i>
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Eliminar Conversación</a></li>
-              </ul>
-            </div></div>
-          </div>--><!--new_message_head-->
-          <!-- chat -->
-        <!--  <div class="chat_area">--><!-- 1er contacto 2 mensajes-->
-         <!--   <ul class="list-unstyled">
-              <li class="left clearfix">
-                <span class="chat-img1 pull-left">
-                  <img src="assets/images/CONT1.png" width="35%;" alt="User Avatar" class="img-circle">
-                </span>
-                <div class="chat-body1 clearfix">
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
-                  <div class="chat_time pull-right">09:40PM</div>
-                </div>
-              </li>
-
-              <div class="chat_area">
-                <ul class="list-unstyled">
-                  <li class="left clearfix">
-                    <span class="chat-img1 pull-left">
-                      <img src="assets/images/CONT1.png" width="35%" alt="User Avatar" class="img-circle">
-                    </span>
-                    <div class="chat-body1 clearfix">
-                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
-                      <div class="chat_time pull-right">09:45PM</div>
-                    </div>
-                  </li>
-
-                  <li class="left clearfix">--><!-- 2 contacto 1 mensaje -->
-                 <!--   <span class="chat-img1 pull-left">
-                      <img src="assets/images/CONT2.png" width="35%" alt="User Avatar" class="img-circle">
-                    </span>
-                    <div class="chat-body1 clearfix">
-                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
-                      <div class="chat_time pull-right">09:45PM</div>
-                    </div>
-                  </li>
-                </ul>
-              </div>--><!--chat_area-->
-
-              <!-- escribo mensajes -->
-            <!--  <div class=""></div>
-              <div id="chat"></div>--> <!-- Recibe el mensaje -->
-          <!--    <form id="message-box">--><!-- Escribo el mensaje -->
-             <!--   <input type="text" id="chat-message" value="">
-                <input type="submit" value="ENVIAR">
-              </form>
-            </div>
-          </div>
-        </aside>
-      </section>-->
 
     <!-- notificacion -->
     <div class="modal fade" id="notify" tabindex="-1" role="dialog">
@@ -590,63 +473,10 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
   </section>
-  <!--Perfil de usuario-->
-  <!--
+  
+  </section>
   <section class="section-user">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h2></h2>
-        </div>
-      </div>
-      <div class="row ">
-        <div class="col-lg-4">
-          <a href="#" class="thumbnail">
-            <img src="assets/images/usuario.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-8 dates">
-          <ul>
-            <li>
-              <h3>Datos</h3>
-            </li>
-            <li>
-              <p><strong>Nombre:</strong> Juanita Bustamante</p>
-            </li>
-            <li>
-              <p><strong>Ciudad Natal:</strong> Concepcion</p>
-            </li>
-            <li>
-              <p><strong>Ciudad actual:</strong> Santiago</p>
-            </li>
-            <li>
-              <p><strong>Fecha de nacimiento:</strong> 8/8/1966</p>
-            </li>
-            <li>
-              <p><strong>Ocupacion:</strong> Secretaria</p>
-            </li>
-            <li>
-              <button class="btn btn-default" href="#edit-date" data-toggle="modal" >Editar</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row description">
-        <div class="col-lg-12">
-          <h2>Descripción</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quam porro dolorem quos delectus obcaecati, ad? Doloribus atque minima repellat mollitia, culpa, laborum explicabo dolorem similique adipisci nam, molestias repudiandae.</p>
-        </div>
-      </div>
-      <div class="row hobbie">
-        <div class="col-lg-12">
-          <h2>Pasatiempos</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate blanditiis soluta deleniti expedita atque voluptatem, inventore nihil harum at aspernatur architecto, eum voluptas officiis quaerat quibusdam vero deserunt ullam. Iure.</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <section class="section-user">
-    <div class="container-fluid">
       <div class="row">
         <div class="fb-profile">
           <img align="left" class="fb-image-lg" src="assets/images/profile-fon.jpg">
