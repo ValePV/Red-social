@@ -190,6 +190,12 @@
     background-color: #14BB90;
     background-image: url(../../assets/images/tex.png);
   }
+  .conta-mens{
+    border:2px solid #14BB90;
+    border-radius: 1%;
+    margin:5% 7%;
+    background-color: #14BB90;
+  }
   .conta-wall{
     margin:5% 7%;
   }
@@ -206,6 +212,13 @@
     background:transparent;
   }
 
+  .collection a{
+    color: #0D5341;
+  }
+
+  .collection a:hover{
+    color: white;
+  }
   .form-invi{
     margin:10% 10%;
   }
@@ -240,6 +253,21 @@
   .circle{
     border-radius: 50%;
     margin:2% 10%;
+  }
+  .cont-menssa{
+    border:2px solid #25574A;
+    padding: 2%;
+    margin-top: 2%;
+  }
+  .cont-input{
+    background-color: #25574A;
+    border:2px solid #25574A;
+    padding: 2%;
+  }
+
+  .chat_area{
+    border-bottom: 1px dotted #B3A9A9;
+    margin:2%;
   }
 
 

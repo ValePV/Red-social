@@ -97,12 +97,17 @@ for(i = 0; i< contac.length ; i++){
   "</p></a><button class='btn btn-default btn-delet' type='submit'>Eliminar</button></div></>");
 
 }
-for(i = 0; i< contac.length ; i++){
+/*for(i = 0; i< contac.length ; i++){
   $('.collection').append("<li class='collection-item avatar'><img src='assets/images/" +
     contac [i]['img'] + "' width='15%;' class='circle'><span class='title'><a href='#'>" + 
     "<strong>" + contac[i]['name'] + "</strong></a></span></li>")
-}
+}*/
 
+for(i = 0; i< contac.length ; i++){
+  $('.collection').append("<a href='#' class='collection-item avatar'><img src='assets/images/" +
+    contac [i]['img'] + "' width='25%;' class='circle'><strong>"
+    + contac[i]['name'] + "</strong></a>")
+}
 
   //Contar cantidad de elementos con una clase
 $(document).ready(function(){
@@ -163,6 +168,19 @@ $(function(){
 
 })
 
+//Agregar imagen
+$("#btn-send").on("click",function(){
+  // rescatando iamgen
+  var chatMes = $("#input-chat").val();
+
+  $('.chat-area1').append("<ul class='list-unstyled'><li class='left clearfix'>" +
+    "<span class='chat-img1 pull-left'><img src='assets/images/CONT1.png'" +
+    "width='55%' alt='User Avatar' class='img-circle'></span>" +
+    "<div class='chat-body1 clearfix'><p>" + chatMes + "<div class='chat_time pull-right'>" +
+    "09:45PM</div></div></li></ul>");
+
+  
+});
 
 $('.section-wall, .section-contact, .section-images, .section-message, .section-user, .bar, .login .init').hide();
   setTimeout(function(){ 
