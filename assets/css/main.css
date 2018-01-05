@@ -29,6 +29,10 @@
     font-size: 500%;
     margin-bottom: 8%;
   }
+  .dates, .description, .hobbie{
+    border: 1px solid grey;
+    border-radius: 5%;
+  }
   .title-login{
     font-family: 'Courgette', cursive;
     color: #000;
@@ -39,6 +43,9 @@
   width: 50%;
   margin-left: 100%;
   margin-top: 5%;
+  }
+  .exit{
+    margin-right: 4%;
   }
   .loader{
     width: 8%;

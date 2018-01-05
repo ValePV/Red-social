@@ -393,8 +393,93 @@
 
           <!--Perfil de usuario-->
           <section class="section-user">
-            
+            <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2></h2>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-lg-4">
+                    <a href="#" class="thumbnail">
+                      <img src="assets/images/usuario.png" alt="">
+                    </a>
+              </div>
+              <div class="col-lg-8 dates">
+                <ul>
+                  <li>
+                    <h3>Datos</h3>                    
+                  </li>
+                  <li>
+                    <p><strong>Nombre:</strong> Juanita Bustamante</p>
+                  </li>
+                  <li>
+                    <p><strong>Ciudad Natal:</strong> Concepcion</p>
+                  </li>
+                  <li>
+                    <p><strong>Ciudad actual:</strong> Santiago</p>
+                  </li>
+                  <li>
+                    <p><strong>Fecha de nacimiento:</strong> 8/8/1992</p>
+                  </li>
+                  <li>
+                    <p><strong>Ocupacion:</strong> Estudiante Agricola</p>
+                  </li>
+                  <li>
+                    <button class="btn btn-default" href="#edit-date" data-toggle="modal" >Editar</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row description">
+              <div class="col-lg-12">
+                <h2>Descripción</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quam porro dolorem quos delectus obcaecati, ad? Doloribus atque minima repellat mollitia, culpa, laborum explicabo dolorem similique adipisci nam, molestias repudiandae.</p>
+              </div>
+            </div>
+            <div class="row hobbie">
+              <div class="col-lg-12">
+                <h2>Pasatiempos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate blanditiis soluta deleniti expedita atque voluptatem, inventore nihil harum at aspernatur architecto, eum voluptas officiis quaerat quibusdam vero deserunt ullam. Iure.</p>
+              </div>
+            </div>
+            </div>
           </section>
+
+          <div class="modal fade" id="edit-date">
+          <div class="modal-dialog">
+            <div class="modal-content back-gray">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body modal-body-register">
+               <form>
+                 <div class="form-group">
+                   <div class="row">
+                     <div class="col-lg-6">
+                       <input class="form-control" id="email" placeholder="Nombre">
+                     </div>
+                     <div class="col-lg-6">
+                       <input class="form-control" id="email" placeholder="ciudad natal">
+                     </div>
+                   </div>          
+                </div>
+                 <div class="form-group">
+                   <input class="form-control" id="pwd" placeholder="ciudad actual">
+                 </div>
+                 <div class="form-group">
+                   <input class="form-control" id="pwd" placeholder="fecha de nacimiento">
+                 </div>
+                 <div class="form-group">
+                   <input class="form-control" id="pwd" placeholder="ocupacion">
+                 </div>
+                 <button type="submit" class="btn btn-info btn-register3">ENVIAR</button>
+               </form>
+               </div>      
+              </div>
+            </div>
+          </div>
+         </div>
 
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
       <!-- Latest compiled and minified JavaScript -->
