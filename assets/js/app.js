@@ -166,17 +166,17 @@
            });
 
            $('.gallery').click(function(){
-            $('.Section-contact, .muro, .section-message, .section-user, .bar, .login').hide();
+            $('.Section-contact, .muro, .section-message, .section-user, .login').hide();
             $('.section-images').show();
            });
 
            $('.message').click(function(){
-            $('.section-images, .Section-contact, .muro, .gallery, .section-user, .bar, .login').hide();
+            $('.section-images, .Section-contact, .muro, .section-user, .login').hide();
             $('.section-message').show();
            });
 
            $('.user').click(function(){
-            $('.section-images, .Section-contact, .muro, .gallery, .section-message, .bar, .login').hide();
+            $('.section-images, .Section-contact, .muro, .section-message, .login').hide();
             $('.section-user').show();
            });
 
