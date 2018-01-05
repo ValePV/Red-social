@@ -123,10 +123,17 @@
 
     });
 
+        $('.muro, .Section-contact, .section-images, .section-message, .section-user, .bar').hide();
+          setTimeout(function(){ 
+            $('.charge').fadeOut(500);
+            $('.bar').show();
+          },  3000);
+    
+
 
     $(document).ready(function(){ 
          //ocultar resto de elementos y al hacer click mostrar lo solicitado
-         $('.muro, .Section-contact, .section-images, .section-message, .section-user').hide();
+         $('.muro, .Section-contact, .section-images, .section-message, .section-user, .bar').hide();
          
          $('.contact').click(function(){
           $('.muro, .section-images, .section-message, .section-user').hide();

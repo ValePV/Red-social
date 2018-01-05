@@ -1,3 +1,17 @@
+.charge{
+  background-color: #04B486;
+  padding: 1%;
+}
+.title-charge{
+  font-family: 'Courgette', cursive;
+  color: #000;
+  font-size: 500%;
+  margin-bottom: 8%;
+}
+.loader{
+  width: 8%;
+  margin-top: 10%;
+}
 .navHeader{
     background-color: #04B486;
 }
